@@ -1,5 +1,5 @@
 [project]
-name = "ai-trading-lab"
+name = "govt-curve-lens"
 version = "0.0.1"
 readme = "README.md"
 authors = [
@@ -10,11 +10,12 @@ dependencies = [
     "pandas",
     "numpy",
     "pyarrow",
-    "ipykernel"
+    "ipykernel",
+    "requests",
+    "xlrd",
+    "openpyxl>=3.1.5",
+    "holidays>=0.108",
 ]
-
-[project.scripts]
-ai-trading-lab = "ai_trading_lab:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
